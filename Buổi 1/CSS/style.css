@@ -1,0 +1,64 @@
+.all_content{
+    border: 1;
+    border-style: solid;
+    width: 210mm;
+    height: 297mm;
+    margin: auto;
+}
+
+.header {
+    margin-left: 23%;
+    text-align: center;
+}
+.header h3{
+    text-transform: uppercase;
+}
+.header h4{
+    text-decoration: underline;
+}
+.img_and_title{
+    display: flex;
+    margin-left: 30px;
+}
+.image{
+    border: 1px;
+    border-style: solid;
+    width: 4cm;
+    height: 6cm;
+    margin-left: 5px;
+    
+}
+.image p {
+    text-align: center;
+    margin-top: 50%;
+    
+}
+.title_content {
+    flex-grow: 1;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.content {
+    font-size: 18px;
+    margin-left: 45px;
+    margin-right: 10px;
+}
+.checkbox {
+    border: 1;
+    border-style: solid;
+    padding-left: 16px;
+}
+.footer{
+    display: flex;
+    text-align: center;
+}
+.confirm {
+    flex-grow: 1;
+}
+.signature {
+    flex-grow: 1;
+}
+.confirm p {
+    font-weight: bold;
+}
