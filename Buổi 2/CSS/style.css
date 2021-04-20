@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    flex-wrap: wrap;
+    
+}
+#layout_1, #layout_2, #layout_3{
+    width: 600px;
+}
+.header, .nav_menu {
+    background: #52a7f8;
+    height: 60px;
+    display: flex;
+    margin-bottom: 3px;    
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.main_top {
+    display: flex;
+    width: 100%;
+    margin: 5px 20px;
+    height: 180px;
+}
+
+.main_bot {
+    display: flex;
+    height: 120px;
+    margin: 0px 20px 5px 20px;
+    width: 100%;
+}
+
+.main_content {
+    background: #6fc040;
+    flex-grow: 2;
+    display: flex;
+    
+}
+
+.sidebar {
+    background: #b46ae3;
+    flex-grow: 1;
+    
+}
+
+.footer {
+    background: #0365c0;
+    height: 60px;
+    margin-top: 4px;;
+}
+.twin{
+    flex-grow: 1;
+    background: #f39019;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.main_bot div:nth-child(2){
+    margin-left: 5px;
+}
+
+/* hinh 2 */
+ .nav_menu {
+     background: rgb(231, 53, 53);
+ }
+ .main_content.hinh2 {
+     flex-grow: 6;
+     height: 250px;
+ }
+ .content  {
+     background: cyan;
+     flex-grow: 1;
+     height: 250px;
+     
+ }
+#layout_2 .main div:nth-child(1){
+     margin-right: 5px ;
+ }
+
+ /* căn giữa */
+.header, .nav_menu, .main_content, .sidebar, .footer, .content, .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* hinh 3 */
+ #layout_3 {
+     background-color: #c4ebfa;
+ }
+ #layout_3 .header {
+    margin: 0 15px 5px 15px;
+    
+    
+ }
+ .aside {
+     background: #6edb6e;
+     height: 250px;
+     margin: 0px 15px;
+     flex-grow: 1;
+ }
+ 
+ .main_content_hinh3{
+     background: #fbb04b;
+     flex-grow: 2;
+     height: 250px;
+     margin-right: 15px;
+     display: flex;
+     align-items: flex-end;
+    flex-wrap: wrap;
+ }
+ .image {
+    background: #fcd24a;
+    width: 25%;
+    height: 90px;
+    margin: 15px;
+ }
+ .footer_hinh3 {
+     margin: 5px 15px 10px 15px;
+ }
+ 
