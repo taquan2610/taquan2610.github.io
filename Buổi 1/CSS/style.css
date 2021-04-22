@@ -1,8 +1,8 @@
 .all_content{
     border: 1;
     border-style: solid;
-    width: 210mm;
-    height: 297mm;
+    width: 794px;
+    height: 1123px;
     margin: auto;
 }
 
@@ -23,8 +23,8 @@
 .image{
     border: 1px;
     border-style: solid;
-    width: 4cm;
-    height: 6cm;
+    width: 151px;
+    height: 226px;
     margin-left: 5px;
     
 }
