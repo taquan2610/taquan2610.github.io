@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    width: 100%;
+   
+    
+}
+.wrap {
+    width: 960px;
+    height: 100%;
+    background-image:url("../image/background.jpg") ;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+}
+.logo {
+    height: 110px;
+    font-size: 100px;
+    color: azure;
+    margin: 10px;
+}
+
+.fix-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    position: sticky;
+    top: 20px;
+
+}
+.main-menu {
+    display: flex;
+    width: 950px;
+    height: 60px;
+    border: 1px chartreuse solid;
+    background-color: rgb(61, 39, 187);
+    opacity: 0.8;
+    
+}
+.main-menu-item , .sub-menu-item {
+    width: fit-content;
+    min-width: 112px;
+    max-width: 145px;
+    flex-grow: 1;
+    height: 40px;
+    border-right: 1px rgba(20, 20, 20, 0.61) solid;
+    position: relative;
+    font-weight: 300;
+    color: white;
+    
+}
+
+.main {
+    display: flex;
+}
+.main-left {
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    width: 630px; 
+        
+}
+.main-right {
+    display: flex;
+    margin: 15px;
+    width: 280px;
+    flex-direction: column;
+}
+.main-slide, .main-content {    
+    width: 628px;
+    border: 1px gray solid;
+    background-color: rgba(243, 241, 150, 0.699);
+}
+.main-slide{
+    height: 300px;
+}
+.main-content {
+    margin-top: 15px;
+}
+.about {
+    border: 1px springgreen solid;
+    background-color: rgba(236, 225, 172, 0.699);
+}
+.categories {
+    margin-top: 15px;
+    border: 1px springgreen solid;
+    background-color: rgba(236, 225, 172, 0.699);
+}
+.sub-menu{
+    position: absolute;
+    top: 50px;
+    display: none;
+    background-color: rgb(61, 39, 187);
+
+}
+.sub-menu-item {
+    border: 1px chartreuse solid;
+    width: 144px;
+    border-radius: 2%;
+}
+.main-menu-item:hover .sub-menu{
+    display: block
+    
+}
+.image-slide {
+    width: 610px;
+    height: 250px;
+    border: 1px firebrick double;
+    border-radius: 1%;
+    margin: auto;
+}
