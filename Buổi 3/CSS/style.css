@@ -19,6 +19,11 @@ body {
     position: fixed;
     bottom: 20px;
     right: 100px;
+    transition: all 1s;
+    
+}
+.back-to-top:hover {
+    transform: scale(1.2);
 }
 .logo {
     height: 110px;
@@ -43,7 +48,7 @@ body {
     height: 60px;
     border: 1px chartreuse solid;
     background-color: rgb(61, 39, 187);
-    opacity: 0.8;
+    opacity: 0.8; 
     
 }
 .main-menu-item , .sub-menu-item {
@@ -56,7 +61,8 @@ body {
     position: relative;
     font-weight: 300;
     color: white;
-    
+    transition: all 1.5s;
+  
 }
 
 .main {
@@ -97,15 +103,21 @@ body {
 }
 .sub-menu{
     position: absolute;
-    top: 50px;
+    top: 40px;
     display: none;
     background-color: rgb(61, 39, 187);
+    transition: all 2s;
 
 }
 .sub-menu-item {
     border: 1px chartreuse solid;
     width: 144px;
     border-radius: 2%;
+}
+.main-menu-item:hover, .sub-menu-item:hover {
+    /* background: rgba(103, 243, 173, 0.438); */
+    color: rgba(251, 255, 0, 0.877);
+    transform: scale(1.2);
 }
 .main-menu-item:hover .sub-menu{
     display: block
@@ -117,4 +129,7 @@ body {
     border: 1px firebrick double;
     border-radius: 1%;
     margin: auto;
+}
+.list-categories {
+    margin-left: 15px;
 }
