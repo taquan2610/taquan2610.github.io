@@ -104,16 +104,20 @@ body {
 ul.sub-menu{
     position: absolute;
     top: 40px;
-    display: none;
     background-color: rgb(61, 39, 187);
-    transition: all 1s;
+    z-index: 0;
+    visibility: hidden;
+    opacity: 0;
 
+}
+.main-menu-item{
+    z-index: 10;
 }
 .sub-menu-item {
     border: 1px chartreuse solid;
     width: 144px;
     border-radius: 2%;
-
+    transition: all 1s;
 }
 .main-menu-item:hover , .sub-menu-item:hover {
     background: rgba(103, 243, 173, 0.438);
@@ -127,8 +131,9 @@ ul.sub-menu{
     transform: scale(1.2);
 }
 .main-menu-item:hover .sub-menu{
-    display: block
-    
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
 }
 .image-slide {
     width: 610px;
@@ -137,6 +142,6 @@ ul.sub-menu{
     border-radius: 1%;
     margin: auto;
 }
-.list-categories {
+.list-categories, div.main-content p, .about p {
     margin-left: 15px;
 }
