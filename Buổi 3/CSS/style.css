@@ -101,18 +101,19 @@ body {
     border: 1px springgreen solid;
     background-color: rgba(236, 225, 172, 0.699);
 }
-.sub-menu{
+ul.sub-menu{
     position: absolute;
     top: 40px;
     display: none;
     background-color: rgb(61, 39, 187);
-    
+    transition: all 1s;
 
 }
 .sub-menu-item {
     border: 1px chartreuse solid;
     width: 144px;
     border-radius: 2%;
+
 }
 .main-menu-item:hover , .sub-menu-item:hover {
     background: rgba(103, 243, 173, 0.438);
