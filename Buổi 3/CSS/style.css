@@ -108,6 +108,7 @@ ul.sub-menu{
     z-index: 0;
     visibility: hidden;
     opacity: 0;
+    transition: 1s;
 
 }
 .main-menu-item{
@@ -117,7 +118,7 @@ ul.sub-menu{
     border: 1px chartreuse solid;
     width: 144px;
     border-radius: 2%;
-    transition: all 1s;
+   
 }
 .main-menu-item:hover , .sub-menu-item:hover {
     background: rgba(103, 243, 173, 0.438);
