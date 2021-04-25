@@ -61,7 +61,7 @@ body {
     position: relative;
     font-weight: 300;
     color: white;
-    transition: all 1.5s;
+    transition: all 0.7s;
   
 }
 
@@ -106,7 +106,7 @@ body {
     top: 40px;
     display: none;
     background-color: rgb(61, 39, 187);
-    transition: all 2s;
+    
 
 }
 .sub-menu-item {
@@ -114,9 +114,15 @@ body {
     width: 144px;
     border-radius: 2%;
 }
-.main-menu-item:hover, .sub-menu-item:hover {
-    /* background: rgba(103, 243, 173, 0.438); */
+.main-menu-item:hover , .sub-menu-item:hover {
+    background: rgba(103, 243, 173, 0.438);
     color: rgba(251, 255, 0, 0.877);
+    
+}
+.main-menu-item span, .sub-menu-item span {
+    transition: all 0.7s;
+}
+.main-menu-item span:hover, .sub-menu-item span:hover {
     transform: scale(1.2);
 }
 .main-menu-item:hover .sub-menu{
