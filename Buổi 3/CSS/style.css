@@ -52,6 +52,7 @@ body {
     
 }
 .main-menu-item , .sub-menu-item {
+    color: white;
     width: fit-content;
     min-width: 112px;
     max-width: 145px;
@@ -60,7 +61,7 @@ body {
     border-right: 1px rgba(20, 20, 20, 0.61) solid;
     position: relative;
     font-weight: 300;
-    color: white;
+    
     transition: all 0.7s;
   
 }
@@ -109,8 +110,8 @@ ul.sub-menu{
     visibility: hidden;
     opacity: 0;
     transition: 1s;
-
 }
+
 .main-menu-item{
     z-index: 10;
 }
@@ -133,8 +134,8 @@ ul.sub-menu{
 }
 .main-menu-item:hover .sub-menu{
     /* display: block; */
-    visibility: visible;
-    opacity: 1;
+    visibility: visible !important ;
+    opacity: 1 !important ;
 }
 .image-slide {
     width: 610px;
