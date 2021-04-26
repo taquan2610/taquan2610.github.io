@@ -51,7 +51,7 @@ body {
     opacity: 0.8; 
     
 }
-.main-menu-item , .sub-menu-item {
+.main-menu-item, .sub-menu-item {
     color: white;
     width: fit-content;
     min-width: 112px;
@@ -60,10 +60,7 @@ body {
     height: 40px;
     border-right: 1px rgba(20, 20, 20, 0.61) solid;
     position: relative;
-    font-weight: 300;
-    
-    transition: all 0.7s;
-  
+    font-weight: 300;         
 }
 
 .main {
@@ -124,6 +121,7 @@ ul.sub-menu{
 .main-menu-item:hover , .sub-menu-item:hover {
     background: rgba(103, 243, 173, 0.438);
     color: rgba(251, 255, 0, 0.877);
+    transition: all 0.7s;
     
 }
 .main-menu-item span, .sub-menu-item span {
@@ -136,6 +134,7 @@ ul.sub-menu{
     /* display: block; */
     visibility: visible !important ;
     opacity: 1 !important ;
+    transition: all 0.7s;
 }
 .image-slide {
     width: 610px;
