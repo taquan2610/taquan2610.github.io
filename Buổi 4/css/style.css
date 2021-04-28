@@ -370,6 +370,9 @@ img {
 .navigation-footer ul li:hover {
     animation: hover-ul 0.5s forwards;
 }
+.useful-footer ul li:hover {
+    animation: hover-ul 0.5s forwards;
+}
 @keyframes hover-ul {
     100% {
         color: yellow;
