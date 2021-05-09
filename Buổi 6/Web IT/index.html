@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
-    <title>Web</title>
+    <title>Technology</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
     <div class="wrap">
         <div class="header">
             <div class="logo">
@@ -31,7 +32,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="main_nav">
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav" style="padding: 0px 15px;">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Home
                                     </a>
@@ -130,9 +131,8 @@
                 </div>
                 <div class="infotech-image col-12 col-md-6 fix-center" style="position: relative;">
                     <img src="image/info tech/home-infotechno-main-slider-slide-01-image-01.png"
-                        style="position: absolute;" alt="">
-                    <img src="image/info tech/home-infotechno-main-slider-slide-01-image-02.png" style="z-index: 1;"
-                        alt="">
+                        style="position: absolute; z-index: -1;" alt="">
+                    <img src="image/info tech/home-infotechno-main-slider-slide-01-image-02.png" alt="">
                 </div>
             </div>
 
@@ -265,7 +265,7 @@
                                 <div class="chooseus-iteam-title">
                                     <p>My tech management system</p>
                                 </div>
-                                <div class="btn-learn-more"></div>
+                                <div class="btn-learn-more fix-center"><p style="font-weight: bold;">Learn more</p></div>
                                 <div class="change-blue"></div>
                             </div>
 
@@ -286,7 +286,7 @@
                                 <div class="chooseus-iteam-title">
                                     <p>My tech management system</p>
                                 </div>
-                                <div class="btn-learn-more"></div>
+                                <div class="btn-learn-more"><p style="font-weight: bold;">Learn more</p></div>
                                 <div class="change-blue"></div>
                             </div>
 
@@ -307,7 +307,7 @@
                                 <div class="chooseus-iteam-title">
                                     <p>My tech management system</p>
                                 </div>
-                                <div class="btn-learn-more"></div>
+                                <div class="btn-learn-more"><p style="font-weight: bold;">Learn more</p></div>
                                 <div class="change-blue"></div>
                             </div>
 
@@ -399,7 +399,7 @@
                                 </p>
                             </div>
                             <div class="view-case-study fix-center">
-                                <spa style="color: white; font-weight: 500;" n>View case study</span>
+                                <span style="color: white; font-weight: 500;" n>View case study</span>
                             </div>
                         </div>
                     </div>
@@ -416,7 +416,7 @@
                                     engineering,</p>
                             </div>
                             <div class="view-case-study fix-center">
-                                <spa style="color: white; font-weight: 500;" n>View case study</span>
+                                <span style="color: white; font-weight: 500;" n>View case study</span>
                             </div>
                         </div>
                     </div>
@@ -433,7 +433,7 @@
                                     engineering,</p>
                             </div>
                             <div class="view-case-study fix-center">
-                                <spa style="color: white; font-weight: 500;" n>View case study</span>
+                                <span style="color: white; font-weight: 500;" n>View case study</span>
                             </div>
                         </div>
                     </div>
@@ -582,6 +582,26 @@
 
         </div>
     </div>
+    
+    <!--  script back to top -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 20) {
+                    $('#toTopBtn').fadeIn();
+                } else {
+                    $('#toTopBtn').fadeOut();
+                }
+            });
+
+            $('#toTopBtn').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    </script>
 </body>
 
 </html>
