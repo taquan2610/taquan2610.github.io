@@ -525,6 +525,11 @@
     .menu {
         position: unset;
     }
+    a.nav-link.dropdown-toggle:hover {
+        color: rgb(255, 4, 54) !important;
+        font-weight: 600;
+        transition: 0.5s !important;
+    }
     /* Chooseus */
     .chooseus-item {
         position: relative;
