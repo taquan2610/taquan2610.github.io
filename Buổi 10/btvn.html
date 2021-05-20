@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div"></div>
+
+    <script>
+        document.write(' <br/> Bài 1 <br/> <br/>');
+        let bai1 = (n) => {
+            let result = '';
+            for (let i = 1; i <= n; i++) {
+
+                for (let j = 1; j <= i; j++) {
+                    result += '*';
+                }
+                result += '<br/>';
+            }
+            document.write(result);
+        }
+        bai1(6);
+
+
+        document.write(' <br/> Bài 2 <br/> <br/>');
+        let bai2 = (a, b) => {
+            let result = '';
+            if (a <= 3 || b <= 3) {
+                document.write('nhập kích thước lớn hơn 3');
+            }
+            else {
+                for (let i = 1; i <= b; i++) {
+
+                    for (let j = 1; j <= a; j++) {
+                        if (i == 1 || i == b || j == 1 || j == a) {
+                            result += '*';
+                        }
+                        else {
+                            result += '+';   //\xa0 &nbsp
+                        }
+                    }
+
+                    result += '<br/>'
+                }
+                document.write(result);
+            }
+
+        }
+        bai2(6, 4);
+
+        
+        document.write(' <br/> Bài 3 <br/> <br/>');
+        let bai3 = (n) => {
+            let result = '';
+            if (n % 2 === 0 || n<=1) {
+                document.write(' hãy nhập n là số lẻ lớn hơn 1');
+            }
+            else {
+                for (let i = 0; i < n / 2; i++) {
+                    if (i == 0) {
+                        for (let j = 0; j < n; j++) {
+                            result += '*';
+
+                        }
+                    }
+                    else {
+                        for (let k = 0; k < i; k++) {
+                            result += '+'
+                        }
+                        for (j = 0; j < n - 2 * i; j++) {
+                            result += '*';
+                        }
+                        for (let k = 0; k < i; k++) {
+                            result += '+'
+                        }
+
+                    }
+                    result += '<br/>'
+                }
+            }
+            document.write(result);
+        }
+        bai3(11);
+
+        
+        document.write(' <br/> Bài 4 <br/> <br/>');
+        let bai4 = (n) => {
+            let result = '';
+            if (n % 2 === 0 || n<=4) {
+                document.write(' hãy nhập n là số lẻ lớn hơn 4');
+            }
+            else {
+                for(let i=0;i<n;i++) {
+                    if( i ===0 || i === n-1 ) {
+                        result += '*'
+                        for(let j =0;j< n-2;j++) {
+                            result += '+';
+                        }
+                        result += '*'
+                    }
+                    else if(i === (n-1)/2) {
+                        for(let j = 0;j<(n-1)/2;j++) {
+                            result += '+';
+                        }
+                        result += '*'
+                        for(let j = 0;j<(n-1)/2;j++) {
+                            result += '+';
+                        }
+                    }
+                    else if(i < (n-1)/2) {
+                        for(let j = 0;j<i;j++) {
+                            result += '+';
+                        }
+                        result += '*';
+                        for(let j = 0;j<n-2*i-2;j++) {
+                            result += '+';
+                        }
+                        result += '*';
+                        for(let j = 0;j<i;j++) {
+                            result += '+';
+                        }
+                    }
+                    else {
+                        for(let j = 0;j<n-1-i;j++) {
+                            result += '+';
+                        }
+                        result += '*';
+                        for(let j = 0;j<2*i-n;j++) {
+                            result += '+';
+                        }
+                        result += '*';
+                        for(let j = 0;j<n-1-i;j++) {
+                            result += '+';
+                        }
+                    }
+                    result += '</br>'
+                }
+                document.write(result);
+            }
+        }
+        bai4(11);
+
+
+        document.write(' <br/> Bài 5 <br/> <br/>');
+        let bai5 = (n) => {
+            let result = '';
+            if (n % 2 === 0 || n<=4) {
+                document.write(' hãy nhập n là số lẻ lớn hơn 4');
+            }
+            else {
+                for(let i=0;i<n;i++) {
+                    if( i ===0 || i === n-1 ) {
+                        result += '*'
+                        for(let j =0;j< n-2;j++) {
+                            result += '+';
+                        }
+                        result += '*'
+                    }
+                    else if(i === (n-1)/2) {
+                        for(let j = 0;j<n;j++) {
+                            result += '*';
+                        }
+                        
+                    }
+                    else if(i < (n-1)/2) {
+                        for(let j = 0;j<i+1;j++) {
+                            result += '*';
+                        }
+                        for(let j = 0;j<n-2*i-2;j++) {
+                            result += '+';
+                        }
+                        
+                        for(let j = 0;j<i+1;j++) {
+                            result += '*';
+                        }
+                    }
+                    else {
+                        for(let j = 0;j<n-i;j++) {
+                            result += '*';
+                        }
+                        
+                        for(let j = 0;j<2*i-n;j++) {
+                            result += '+';
+                        }
+                        
+                        for(let j = 0;j<n-i;j++) {
+                            result += '*';
+                        }
+                    }
+                    result += '</br>'
+                }
+                document.write(result);
+            }
+        }
+        bai5(11);
+    </script>
+</body>
+
+</html>
